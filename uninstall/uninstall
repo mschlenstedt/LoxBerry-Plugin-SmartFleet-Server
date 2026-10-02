@@ -1,0 +1,42 @@
+#!/bin/bash
+# SmartFleet Server (LoxBerry-Plugin)
+# Copyright (c) 2026 Michael Schlenstedt. Alle Rechte vorbehalten.
+# Nutzung, Weitergabe und Veraenderung nur nach den Lizenzbedingungen,
+# die diesem Programm beiliegen (LICENSE).
+
+PDIR=REPLACELBPPLUGINDIR
+BASIS=REPLACELBHOMEDIR
+SITE_NAME="050-$PDIR"
+SITE="$BASIS/system/apache2/sites-available/$SITE_NAME.conf"
+
+a2dissite -q "$SITE_NAME" > /dev/null 2>&1
+rm -f "$SITE"
+if [ ! -e "$SITE" ] && [ ! -e "$BASIS/system/apache2/sites-enabled/$SITE_NAME.conf" ]; then
+    echo "<OK> VirtualHost $SITE_NAME entfernt"
+else
+    echo "<WARNING> VirtualHost $SITE_NAME liess sich nicht vollstaendig entfernen"
+fi
+if systemctl reload apache2 > /dev/null 2>&1; then
+    echo "<OK> Apache neu geladen"
+else
+    echo "<WARNING> Apache liess sich nicht neu laden"
+fi
+LOGDIR="$( . "$BASIS/system/apache2/envvars" > /dev/null 2>&1; echo "$APACHE_LOG_DIR" )"
+if [ -n "$LOGDIR" ] && [ -d "$LOGDIR" ]; then
+    rm -f "$LOGDIR/$PDIR-error.log"* "$LOGDIR/$PDIR-access.log"*
+    echo "<OK> Apache-Logs des Servers entfernt"
+fi
+
+if mariadb -e "DROP DATABASE IF EXISTS \`$PDIR\`; DROP USER IF EXISTS '$PDIR'@'localhost';" > /dev/null 2>&1; then
+    echo "<OK> Datenbank und Datenbank-Benutzer $PDIR geloescht"
+else
+    echo "<WARNING> Datenbank $PDIR liess sich nicht loeschen (MariaDB nicht erreichbar?)"
+fi
+
+if [ -e "$BASIS/data/plugins/.$PDIR.upgrade" ]; then
+    rm -rf "$BASIS/data/plugins/.$PDIR.upgrade" && echo "<OK> Sicherung eines abgebrochenen Upgrades entfernt"
+fi
+
+echo "<INFO> MariaDB bleibt installiert - andere Plugins koennen sie mitbenutzen."
+exit 0
+

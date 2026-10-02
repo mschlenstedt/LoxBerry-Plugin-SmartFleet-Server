@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="SmartFleet Server">
+<title>SmartFleet Server</title>
+<!--
+  SmartFleet Server - Icon fuer das LoxBerry-Plugin, das den Server
+  installiert. Noch nicht in Gebrauch: Das Plugin gibt es zum Zeitpunkt
+  dieser Datei noch nicht.
+
+  Der Miniserver ist die Zeichnung aus main_miniserver.svg des LoxBerry-Cores,
+  unveraendert uebernommen - nur der Hintergrund des Originals ist entfernt
+  und die Zeichnung neu platziert (61,541 x 33,129 Einheiten, Mitte bei
+  31,941 / 32,552; die Werte sind aus den verschachtelten Transformationen
+  des Originals ausgerechnet).
+
+  Die Anordnung folgt einem gaengigen Cloud-Computing-Zeichen: vier
+  Umriss-Ringe fuer die Standorte, Diagonalen zur Mitte, vier gefuellte
+  Punkte dazwischen. In der Mitte steht statt der ueblichen Wolke das Geraet.
+
+  WARUM NUR EIN GERAET UND NICHT VIER: An den vier Aussenpositionen waere
+  seine Klemmleiste bei 64 Pixeln nur 0,75 Pixel hoch - unter einem Pixel
+  bleibt vom Miniserver ein grauer Schleier. In der Mitte sind es 1,4 Pixel,
+  und das reicht.
+
+  Die Punkte links und rechts stehen weiter aussen als die oben und unten:
+  Das Geraet ist breit und flach, seine Freistellung reicht bis 132, ein
+  Punkt an der symmetrischen Stelle verschwaende darunter.
+
+  Grund und Eckradius wie beim Client und beim Smartmeter-Plugin.
+-->
+<defs><linearGradient id="linearGradient4395"><stop style="stop-color:#83b819" offset="0" /><stop style="stop-color:#96c71f" offset="1" /></linearGradient><linearGradient xlink:href="#linearGradient4395" id="linearGradient4401" x1="-217.08177" y1="7.8474579" x2="237.58788" y2="7.8474579" gradientUnits="userSpaceOnUse" /></defs>
+<rect width="512" height="512" rx="114" fill="#49DE80"/>
+<g stroke="#08120B" stroke-width="22" stroke-linecap="round">
+<path d="M 256 256 L 112 112"/>
+<path d="M 256 256 L 400 112"/>
+<path d="M 256 256 L 112 400"/>
+<path d="M 256 256 L 400 400"/>
+</g>
+<circle cx="112" cy="112" r="46" fill="#49DE80"/>
+<circle cx="112" cy="112" r="46" fill="none" stroke="#08120B" stroke-width="20"/>
+<circle cx="400" cy="112" r="46" fill="#49DE80"/>
+<circle cx="400" cy="112" r="46" fill="none" stroke="#08120B" stroke-width="20"/>
+<circle cx="112" cy="400" r="46" fill="#49DE80"/>
+<circle cx="112" cy="400" r="46" fill="none" stroke="#08120B" stroke-width="20"/>
+<circle cx="400" cy="400" r="46" fill="#49DE80"/>
+<circle cx="400" cy="400" r="46" fill="none" stroke="#08120B" stroke-width="20"/>
+<circle cx="256" cy="112" r="22" fill="#08120B"/>
+<circle cx="256" cy="400" r="22" fill="#08120B"/>
+<circle cx="88" cy="256" r="22" fill="#08120B"/>
+<circle cx="424" cy="256" r="22" fill="#08120B"/>
+<rect x="132.0" y="183.7" width="248.0" height="144.6" rx="14" fill="#49DE80"/>
+<g transform="translate(139.7396,137.5156) scale(3.63985)"><g transform="translate(0,36.000002)"><g transform="matrix(0.13535282,0,0,0.13535282,31.630994,1.3819977)"><rect style="fill:#f89b3c" width="91.216766" height="21.920309" x="45.528393" y="-158.06274" /><rect style="fill:#51ba8f" width="152.38152" height="21.920311" x="-106.11449" y="-158.06274" /><rect style="fill:#3a3a32" width="79.903069" height="21.920311" x="136.08327" y="-158.06274" /></g><rect transform="matrix(0.13535282,0,0,0.13535282,30.553712,-4.71706)" y="-103.46377" x="-161.85886" height="6.5407376" width="45.78516" style="fill:#000000" /><rect transform="matrix(0.13535282,0,0,0.13535282,30.553712,-4.71706)" y="-96.663727" x="-208.69395" height="43.499996" width="441.49997" style="fill:#727272" /></g><g transform="translate(0,36.000002)"><g transform="matrix(0.13535282,0,0,0.13535282,30.553712,-4.7170597)"><rect y="-53.317276" x="-217.08177" height="122.32947" width="454.66965" style="fill:url(#linearGradient4401)" /><g><rect style="fill:#c5292a" width="242.49998" height="18.5" x="-18.152977" y="111.9869" /><g transform="translate(0,-0.54888153)"><rect y="111.14811" x="-157.42876" height="21.160118" width="59.396969" style="fill:#83b819" /><rect y="112.53578" x="-97.84259" height="19.609194" width="31.765724" style="fill:#014a99" /><circle r="4.4797626" cy="122.3406" cx="-147.31767" style="fill:#ffffff" /><circle r="4.4797626" cy="122.3406" cx="-134.39406" style="fill:#ffffff" /><circle r="4.4797626" cy="122.3406" cx="-121.47044" style="fill:#ffffff" /><circle r="4.4797626" cy="122.3406" cx="-108.54684" style="fill:#ffffff" /><circle r="4.4797626" cy="122.3406" cx="-88.397995" style="fill:#ffffff" /><circle r="4.4797626" cy="122.3406" cx="-75.474396" style="fill:#ffffff" /><circle r="4.4797626" cy="120.80368" cx="-10.357912" style="fill:#ffffff" /><circle r="4.4797626" cy="120.80368" cx="4.6124487" style="fill:#ffffff" /><circle r="4.4797626" cy="120.80368" cx="19.582838" style="fill:#ffffff" /><circle r="4.4797626" cy="120.80368" cx="34.553196" style="fill:#ffffff" /><circle r="4.4797626" cy="120.80368" cx="49.523556" style="fill:#ffffff" /><circle r="4.4797626" cy="120.80368" cx="64.493935" style="fill:#ffffff" /><circle r="4.4797626" cy="120.80368" cx="79.46431" style="fill:#ffffff" /><circle r="4.4797626" cy="120.80368" cx="94.434669" style="fill:#ffffff" /><circle r="4.4797626" cy="120.80368" cx="109.40504" style="fill:#ffffff" /><circle r="4.4797626" cy="120.80368" cx="124.37541" style="fill:#ffffff" /><circle r="4.4797626" cy="120.80368" cx="139.34576" style="fill:#ffffff" /><circle r="4.4797626" cy="120.80368" cx="154.31613" style="fill:#ffffff" /><circle r="4.4797626" cy="120.80368" cx="169.2865" style="fill:#ffffff" /><circle r="4.4797626" cy="120.80368" cx="184.25688" style="fill:#ffffff" /><circle r="4.4797626" cy="120.80368" cx="199.22726" style="fill:#ffffff" /><circle r="4.4797626" cy="120.80368" cx="214.19762" style="fill:#ffffff" /><circle r="4.4797626" cy="-105.14187" cx="-87.904259" style="fill:#ffffff" /><circle r="4.4797626" cy="-105.14187" cx="-72.933891" style="fill:#ffffff" /><circle r="4.4797626" cy="-105.14187" cx="-57.963505" style="fill:#ffffff" /><circle r="4.4797626" cy="-105.14187" cx="-42.993141" style="fill:#ffffff" /><circle r="4.4797626" cy="-105.14187" cx="-28.022791" style="fill:#ffffff" /><circle r="4.4797626" cy="-105.14187" cx="-13.052407" style="fill:#ffffff" /><circle r="4.4797626" cy="-105.14187" cx="1.9179599" style="fill:#ffffff" /><circle r="4.4797626" cy="-105.14187" cx="16.888327" style="fill:#ffffff" /><circle r="4.4797626" cy="-105.14187" cx="31.858694" style="fill:#ffffff" /><circle r="4.4797626" cy="-105.14187" cx="46.829063" style="fill:#ffffff" /><circle r="4.4797626" cy="-105.14187" cx="61.799416" style="fill:#ffffff" /><circle r="4.4797626" cy="-105.14187" cx="76.769783" style="fill:#ffffff" /><circle r="4.4797626" cy="-105.14187" cx="91.74015" style="fill:#ffffff" /><circle r="4.4797626" cy="-105.14187" cx="106.71053" style="fill:#ffffff" /><circle r="4.4797626" cy="-105.14187" cx="121.68095" style="fill:#ffffff" /><circle r="4.4797626" cy="-105.14187" cx="136.65128" style="fill:#ffffff" /><circle r="4.4797626" cy="-105.14187" cx="155.42722" style="fill:#ffffff" /><circle r="4.4797626" cy="-105.14187" cx="170.39758" style="fill:#ffffff" /><circle r="4.4797626" cy="-105.14187" cx="185.36795" style="fill:#ffffff" /><circle r="4.4797626" cy="-105.14187" cx="200.33833" style="fill:#ffffff" /><circle r="4.4797626" cy="-105.14187" cx="215.30875" style="fill:#ffffff" /></g></g><rect y="-2.2393332" x="-24.856903" height="21.754051" width="262.44489" style="fill:#404040" ry="0" /><rect y="4.3026333" x="-213.54623" height="3.9682131" width="34.648232" style="fill:#000000" /><rect y="68.9869" x="-208.15302" height="43.5" width="441.50003" style="fill:#727272" /><rect y="4.3026333" x="-176.44972" height="3.9682131" width="34.648232" style="fill:#000000" /></g><g transform="matrix(0.13535282,0,0,0.13535282,30.494353,-10.931433)"><rect y="138.30865" x="-199.4041" height="20.506096" width="16.263454" style="fill:#000000" /><rect y="138.30865" x="-183.35208" height="20.506098" width="16.263456" style="fill:#c5292a" /></g></g></g>
+</svg>

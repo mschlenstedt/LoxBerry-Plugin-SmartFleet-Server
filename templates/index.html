@@ -1,0 +1,52 @@
+<!--
+    SmartFleet Server (LoxBerry-Plugin)
+    Copyright (c) 2026 Michael Schlenstedt. Alle Rechte vorbehalten.
+    Nutzung, Weitergabe und Veraenderung nur nach den Lizenzbedingungen,
+    die diesem Programm beiliegen (LICENSE).
+-->
+
+<style>
+.lb-callout.lb-callout-danger { border-left-color: var(--lb-danger, #dc2626); }
+.sfs-url { font-family: var(--lb-font-mono, monospace); font-size: 1.05rem; word-break: break-all; }
+.sfs-log { font-family: var(--lb-font-mono, monospace); font-size: 13px; white-space: pre-wrap;
+    word-break: break-word; margin: 10px 0 0; }
+</style>
+<div class="lb-content">
+<div class="lb-card">
+<div class="lb-section-title"><TMPL_VAR SFS.PLUGINTITLE></div>
+
+<TMPL_IF NAME="EINGERICHTET">
+  <p><TMPL_VAR SFS.TEXT_EINGERICHTET></p>
+  <p class="sfs-url"><TMPL_VAR NAME="URL" ESCAPE="HTML"></p>
+  <div class="lb-actions">
+    <a class="lb-btn lb-btn-primary" href="<TMPL_VAR NAME="URL" ESCAPE="HTML">" target="_blank" rel="noopener"><TMPL_VAR SFS.BTN_OEFFNEN></a>
+  </div>
+  <div class="lb-callout">
+    <div class="lb-callout-title"><TMPL_VAR SFS.TITEL_ZERTIFIKAT></div>
+    <p><TMPL_VAR SFS.TEXT_ZERTIFIKAT></p>
+  </div>
+  <div class="lb-callout">
+    <div class="lb-callout-title"><TMPL_VAR SFS.TITEL_ZUGANG></div>
+    <p><TMPL_VAR SFS.TEXT_ZUGANG> <strong><TMPL_VAR NAME="ADMIN_MAIL" ESCAPE="HTML"></strong></p>
+  </div>
+  <div class="lb-callout lb-callout-warning">
+    <div class="lb-callout-title"><TMPL_VAR SFS.TITEL_NURTEST></div>
+    <p><TMPL_VAR SFS.TEXT_NURTEST></p>
+  </div>
+<TMPL_ELSE>
+  <TMPL_IF NAME="FEHLER">
+    <div class="lb-callout lb-callout-danger">
+      <div class="lb-callout-title"><TMPL_VAR SFS.TITEL_FEHLER></div>
+      <div class="sfs-log"><TMPL_VAR NAME="FEHLER" ESCAPE="HTML"></div>
+    </div>
+    <p><TMPL_VAR SFS.TEXT_FEHLER></p>
+  <TMPL_ELSE>
+    <div class="lb-callout lb-callout-warning">
+      <div class="lb-callout-title"><TMPL_VAR SFS.TITEL_OFFEN></div>
+      <p><TMPL_VAR SFS.TEXT_OFFEN></p>
+    </div>
+  </TMPL_IF>
+</TMPL_IF>
+
+</div>
+</div>
