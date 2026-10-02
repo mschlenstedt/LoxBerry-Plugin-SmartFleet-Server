@@ -10,6 +10,8 @@
 .sfs-url { font-family: var(--lb-font-mono, monospace); font-size: 1.05rem; word-break: break-all; }
 .sfs-log { font-family: var(--lb-font-mono, monospace); font-size: 13px; white-space: pre-wrap;
     word-break: break-word; margin: 10px 0 0; }
+.sfs-schritte { margin: 6px 0 0; padding-left: 1.4em; line-height: 1.5; }
+.sfs-schritte li + li { margin-top: 4px; }
 </style>
 <div class="lb-content">
 <div class="lb-card">
@@ -22,12 +24,13 @@
     <a class="lb-btn lb-btn-primary" href="<TMPL_VAR NAME="URL" ESCAPE="HTML">" target="_blank" rel="noopener"><TMPL_VAR SFS.BTN_OEFFNEN></a>
   </div>
   <div class="lb-callout">
-    <div class="lb-callout-title"><TMPL_VAR SFS.TITEL_ZERTIFIKAT></div>
-    <p><TMPL_VAR SFS.TEXT_ZERTIFIKAT></p>
-  </div>
-  <div class="lb-callout">
-    <div class="lb-callout-title"><TMPL_VAR SFS.TITEL_ZUGANG></div>
-    <p><TMPL_VAR SFS.TEXT_ZUGANG> <strong><TMPL_VAR NAME="ADMIN_MAIL" ESCAPE="HTML"></strong></p>
+    <div class="lb-callout-title"><TMPL_VAR SFS.TITEL_SCHRITTE></div>
+    <ol class="sfs-schritte">
+      <li><TMPL_VAR SFS.SCHRITT_1></li>
+      <li><TMPL_VAR SFS.SCHRITT_2></li>
+      <li><TMPL_VAR SFS.SCHRITT_3> <strong><TMPL_VAR NAME="ADMIN_MAIL" ESCAPE="HTML"></strong>.</li>
+      <li><TMPL_VAR SFS.SCHRITT_4></li>
+    </ol>
   </div>
   <div class="lb-callout lb-callout-warning">
     <div class="lb-callout-title"><TMPL_VAR SFS.TITEL_NURTEST></div>
